@@ -11,6 +11,8 @@ var usersGuessL = userGuess.toLowerCase();
 // Choosing random array element for computer guess
 var rand = myArray[Math.floor(Math.random() * myArray.length)];
 
+// Next to generate a function to capture user inputs
+
 
 
 
