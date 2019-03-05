@@ -1,18 +1,22 @@
-var wins;
-var losses;
+var wins = 0;
+var losses = 0;
 var guesses = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var compGuesses = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-// Create a prompt for users input
-var usersGuess = prompt("Choose a letter for your guess");
+document.onkeyup = function(event) {
+// Logs keys inputed by user
+var usersGuess = event.key;
 
 // Converts user inputs to lowercase in order to match lowercase elements in the array
-var usersGuessL = userGuess.toLowerCase();
+var usersGuessL = usersGuess.toLowerCase();
 
 // Choosing random array element for computer guess
-var rand = myArray[Math.floor(Math.random() * myArray.length)];
+var rand = compGuesses[Math.floor(Math.random() * compGuesses.length)];
 
-// Next to generate a function to capture user inputs
+alert("User guess: " + usersGuess);
+alert("Computer guess: " + rand);
 
-
-
-
+if (usersGuessL === rand) {
+     alert("You Win!");}
+     else alert ("refresh to try again")}
+    
